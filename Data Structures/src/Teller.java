@@ -3,34 +3,45 @@
  */
 public class Teller {
     public int idolTime = 0;
-    public int queue;
     public int lastdepart = 0;
 
-    public void setQueue(int queue) {
-        this.queue = queue;
-    }
-
-    public int getQueue() {
-        return queue;
-    }
-
+    /**
+     * returns last depart
+     * @return
+     */
     public int getLastdepart() {
         return lastdepart;
     }
 
-    public void setLastdepart(int lastdepart) {
-        this.lastdepart = lastdepart;
+    /**
+     * sets last depart
+     * @param lastdepa
+     */
+    public void setLastdepart(int lastdepa) {
+        lastdepart = lastdepa;
     }
 
+    /**
+     * returns idle time
+     * @return
+     */
     public int getIdolTime() {
         return idolTime;
     }
 
+    /**
+     * sets idle time
+     * @param idolTime
+     */
     public void setIdolTime(int idolTime) {
-        this.idolTime = idolTime;
+        idolTime = idolTime;
     }
 
+    /**
+     * adds idle time to current idle time
+     * @param idol
+     */
     public void addIdolTime(int idol){
-        this.idolTime= this.idolTime + idol;
+        idolTime= idolTime + idol;
     }
 }
